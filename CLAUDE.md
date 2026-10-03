@@ -72,6 +72,8 @@ Phrases from me that mean a skill fits:
 
 # Code style
 
+- Use pre-increment/decrement (`++i`, `--i`) unless the old value is actually needed (C, C++, Java, JS, etc.).
+
 Keep comments minimal and concise.
 
 - Don't narrate what the code already says. No comments that restate the line below them.
