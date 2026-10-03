@@ -1,0 +1,4 @@
+# Extra prod patterns (ERE), one per line, beyond the built-in "prod"/"production" match.
+# Copy to ~/.claude/hooks/prod-guard.patterns. Useful for prod clusters whose names don't say "prod",
+# e.g. a prod API server host prefix.
+# my-prod-apiserver-host
