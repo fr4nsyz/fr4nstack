@@ -31,6 +31,10 @@ Typical flow, suggest the next skill when its stage is reached:
 - resuming earlier work -> `/recall` or `/progress`
 - new to a repo, or need to see where a bug lives -> `/repo-map`
 - starting an open-source issue or bug in a repo I don't own -> `/oss-fix`
+- need to see runtime state (wrong value, hang, crash) in Go/C/C++ -> `/debugging-code`
+- Go race, leak, hang, or perf question -> `/golang-troubleshooting` or `/golang-benchmark`
+- C/C++ memory bug or untrusted input parsing -> `/sanitizers`, then `/libfuzzer`
+- C/C++ code handling untrusted input, before a PR -> `/c-review`
 - before cluster work, or a cluster command fails on auth -> `/env`
 - about to run something >2 min -> `/longrun`
 - bug with a cheap test path, before fixing -> `/tdd`
@@ -64,6 +68,8 @@ Phrases from me that mean a skill fits:
 - "check prod", "look at prod logs", "readonly only" on a cluster question -> `/prod-look`
 
 # Engineering
+
+- Never install tools, packages, or binaries yourself (no `go install ...@latest`, `curl | sh`, `brew install`). Tell me the command, pinned to a version.
 
 - Smallest change that solves the problem. Prefer deletion over new layers.
 - Before declaring done, verify against the real artifact (run it, read the actual value), not "it compiles" or a self-report.

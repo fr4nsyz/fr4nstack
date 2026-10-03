@@ -1,0 +1,26 @@
+{
+  "name": "fr4nstack",
+  "owner": { "name": "fr4nsyz" },
+  "metadata": { "description": "Local, vendored plugins. Install from this checkout, never from upstream." },
+  "plugins": [
+    {
+      "name": "c-review",
+      "source": "./plugins/c-review",
+      "description": "C/C++ security code review (Trail of Bits, vendored at 82fe822)",
+      "version": "2.0.3"
+    },
+    {
+      "name": "gopls-lsp",
+      "source": "./plugins/gopls-lsp",
+      "description": "Go language server for code intelligence (Anthropic, vendored at d182ca4)",
+      "version": "1.0.0",
+      "strict": false,
+      "lspServers": {
+        "gopls": {
+          "command": "gopls",
+          "extensionToLanguage": { ".go": "go" }
+        }
+      }
+    }
+  ]
+}
