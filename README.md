@@ -1,10 +1,10 @@
 # fr4nstack
 
-my Claude Code skills. half borrowed from [poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack), half written after reading every prompt i'd sent Claude for a month and noticing i kept asking for the same things.
+my Claude Code skills, written after reading every prompt i'd sent Claude for a month and noticing i kept asking for the same things.
 
 ## what's in here
 
-### mine
+### workflow
 
 | skill | what it does |
 |---|---|
@@ -21,11 +21,9 @@ my Claude Code skills. half borrowed from [poteto's pstack](https://github.com/c
 | `/repo-map` | new to a repo: components, every integration with `file:line`, a mermaid diagram with the bug's location highlighted |
 | `/oss-fix` | open-source issue flow: reproduce, failing test, fix, adversarial review, then prove it with a debugger/tracer/the real binary |
 
-### from pstack (MIT, modified)
+### review, learning, writing
 
-`/blast-radius`, `/interrogate`, `/recall`, `/reflect`, `/how`, `/unslop`, `/bro`, `/tdd`, `/show-me-your-work`, `/create-verification-skill`, `typescript-best-practices` (auto-loads on `.ts`/`.tsx`), plus two `principle-*` skills it reads.
-
-changes from upstream: removed references to pstack skills i don't use (`why`, `arena`, `session-pickup`, `maintain-verification-skill`, some principles), pointed them at `gh`/`git` and my own skills instead, and made `typescript-best-practices` load automatically. pstack's license is in [`LICENSE-pstack`](LICENSE-pstack).
+`/blast-radius`, `/interrogate`, `/recall`, `/reflect`, `/how`, `/unslop`, `/bro`, `/tdd`, `/show-me-your-work`, `/create-verification-skill`, `typescript-best-practices` (auto-loads on `.ts`/`.tsx`), plus two `principle-*` skills it reads. these are manual-only (`/name`).
 
 ### the rest
 
@@ -46,4 +44,8 @@ cp hooks/prod-guard.sh ~/.claude/hooks/ && chmod +x ~/.claude/hooks/prod-guard.s
 
 then merge `settings.example.json` into `~/.claude/settings.json`, take whatever you want from `CLAUDE.md`, and write your own `infra.md` from the example if you do cluster work. the guard needs `jq`.
 
-pstack skills are manual-only (`/name`). mine can also trigger on their own when your wording matches.
+workflow skills can also trigger on their own when your wording matches.
+
+## credits
+
+the skills under "review, learning, writing" come from [poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack) (MIT, [`LICENSE-pstack`](LICENSE-pstack)), via the [backnotprop/pstack](https://github.com/backnotprop/pstack) mirror. changes: removed references to pstack skills not included here, pointed them at `gh`/`git` and the workflow skills instead, and made `typescript-best-practices` load automatically.
