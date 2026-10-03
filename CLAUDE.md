@@ -29,6 +29,8 @@ Rules:
 
 Typical flow, suggest the next skill when its stage is reached:
 - resuming earlier work -> `/recall` or `/progress`
+- new to a repo, or need to see where a bug lives -> `/repo-map`
+- starting an open-source issue or bug in a repo I don't own -> `/oss-fix`
 - before cluster work, or a cluster command fails on auth -> `/env`
 - about to run something >2 min -> `/longrun`
 - bug with a cheap test path, before fixing -> `/tdd`

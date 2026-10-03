@@ -18,6 +18,8 @@ my Claude Code skills. half borrowed from [poteto's pstack](https://github.com/c
 | `/env` | infra preflight: which cluster, staging or prod, is auth still valid, exact re-auth command |
 | `/stage` | build, push, helmfile diff, sync to staging, confirm the new image is actually running, test |
 | `/prod-look` | read-only investigation across prod clusters, summarized per cluster |
+| `/repo-map` | new to a repo: components, every integration with `file:line`, a mermaid diagram with the bug's location highlighted |
+| `/oss-fix` | open-source issue flow: reproduce, failing test, fix, adversarial review, then prove it with a debugger/tracer/the real binary |
 
 ### from pstack (MIT, modified)
 
